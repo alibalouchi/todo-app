@@ -6,3 +6,9 @@ const addTodo = () => {
     paragraph.appendChild(todo)
     todoPlace.appendChild(paragraph)
 }
+
+window.addEventListener("keypress", (event) => {
+    if (event.keyCode == 13){
+        addTodo()
+    }
+})
