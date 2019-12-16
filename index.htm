@@ -6,21 +6,21 @@
 	</head>
 	<body>
 		<div class="input">
-			<input />
+			<input class="add-input" />
 			<button onclick="addTodo()">Add</button>
 		</div>
 		<div class="filter-button">
-			<button>
+			<input id="complete" onclick="handleShow()" type="radio" name="showTodo">
 				Completed
-			</button>
-			<button>
+			</input>
+			<input id="active" onclick="handleShow()" type="radio" name="showTodo">
 				Active
-			</button>
-			<button>
+			</input>
+			<input checked id="all" onclick="handleShow()" type="radio" name="showTodo">
 				All
-			</button>
+			</input>
 		</div>
-		<div>
+		<div class="table">
 			<table>
 				<tr>
 					<th>Remove</th>

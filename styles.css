@@ -1,3 +1,7 @@
+body{
+    text-align: center;
+}
+
 table, th, tr, td {
     border-collapse: collapse;
     border: 1px solid black;
@@ -10,10 +14,44 @@ table {
 .filter-button {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-button {
-    
+.filter-button *{
+    margin: 15px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.complete {
+    background-color: green;
+}
+
+.add-input{
+    width: 80%;
+}
+
+.button {
+    border-radius: 100%;
+    margin: 10%;
+}
+
+.button:hover {
+    border-radius: 30%;
+    background-color: grey;
+}
+
+.table{
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
