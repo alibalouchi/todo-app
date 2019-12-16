@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="./styles.css" rel="stylesheet" type="text/css">
-        <title>Todo App</title>
-    </head>
-    <body>
-        <input class="input" type="text">
-        <button class="button" type="button" onclick="addTodo()">Submit your todo</button>
-        <ul class="todos">
-        </ul>
-        <script src="./script.js"></script>
-    </body>
+	<head>
+		<link href="./styles.css" rel="stylesheet" type="text/css">
+		<title>Todo App</title>
+	</head>
+	<body>
+		<div class="input">
+			<input />
+			<button onclick="addTodo()">Add</button>
+		</div>
+		<div class="filter-button">
+			<button>
+				Completed
+			</button>
+			<button>
+				Active
+			</button>
+			<button>
+				All
+			</button>
+		</div>
+		<div>
+			<table>
+				<tr>
+					<th>Remove</th>
+					<th>Todos</th>
+					<th>edit</th>
+					<th>Completed</th>
+				</tr>
+				<tbody id='addedTodos'>
+				</tbody>
+				<!-- todos go in here from javascript -->
+			</table>
+		</div>
+		<script src="./script.js"></script>
+	</body>
 </html>

@@ -1,4 +1,19 @@
-.todos{
+table, th, tr, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+table {
+    width: 85%;
+    text-align: center;
+}
+
+.filter-button {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    
 }
