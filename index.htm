@@ -7,7 +7,8 @@
 	<body>
 		<div class="input">
 			<input class="add-input" />
-			<button onclick="addTodo()">Add</button>
+			<button id="addButton" onclick="addTodo()">Add</button>
+			<button id="editButton" disabled onclick="editTodo()">Edit</button>
 		</div>
 		<div class="filter-button">
 			<input id="complete" onclick="handleShow()" type="radio" name="showTodo">
@@ -29,8 +30,8 @@
 					<th>Completed</th>
 				</tr>
 				<tbody id='addedTodos'>
-				</tbody>
 				<!-- todos go in here from javascript -->
+				</tbody>
 			</table>
 		</div>
 		<script src="./script.js"></script>
